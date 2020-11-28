@@ -1,0 +1,123 @@
+:root {
+  --color-primary:#dbd5a4;
+  --color-dark: #649173; }
+
+*, *:blank, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-dark);
+  scroll-behavior: smooth; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+::selection {
+  background-color: var(--color-primary);
+  color: --color-dark; }
+
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  font-size: 2.3rem;
+  background-image: linear-gradient(to right bottom, #649173, #dbd5a4);
+  color: var(--color-primary); }
+  .login-text {
+    text-align: center; }
+  .login-icon {
+    height: 6rem;
+    width: 4rem;
+    margin-right: 1.7rem; }
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 3rem;
+    width: 33rem;
+    background-image: linear-gradient(to right bottom, rgba(100, 145, 115, 0.8) 65%, rgba(219, 213, 164, 0.8));
+    animation-name: log;
+    animation-duration: .6s;
+    border-radius: 2rem;
+    box-shadow: 8px 2px 4px rgba(var(--color-dark), 0.5); }
+  .login-mail input, .login-pwd input {
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: var(--color-primary);
+    font-family: 'Great Vibes', cursive;
+    border: none;
+    border-bottom: 1px solid var(--color-primary);
+    padding: 1rem;
+    width: 90%;
+    background-color: transparent;
+    transition: all 0.5s; }
+  .login-mail label, .login-pwd label {
+    display: block; }
+  .login-mail input:focus, .login-pwd input:focus {
+    outline: unset !important;
+    caret-color: var(--color-primary); }
+  .login-mail input:not(:placeholder-shown):typ
+.login-pwd, .login-mail, .login-text {
+    margin-bottom: 3rem; }
+  .login-mail label, .login-pwd label {
+    transform: translateY(-4.2rem);
+    color: transparent;
+    transition: all .7s; }
+  .login-mail input:not(:placeholder-shown) + label, .login-pwd input:not(:placeholder-shown) + label {
+    transform: translateY(1rem);
+    color: var(--color-primary); }
+  .login input:focus {
+    width: 93%; }
+  .login input:focus:invalid {
+    border-bottom: 1px solid var(--color-dark); }
+  .login-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%; }
+
+.btn {
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-dark);
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  border-radius: .5rem;
+  margin: 0 auto;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .btn:hover {
+    box-shadow: 0px 4px 8px rgba(var(--color-primary), 1);
+    border-radius: unset;
+    opacity: 0.8; }
+
+input::placeholder {
+  color: var(--color-primary);
+  font-size: 2.1rem;
+  font-weight: 400; }
+
+@keyframes log {
+  0% {
+    opacity: 0;
+    margin-top: 10rem; }
+  100% {
+    opacity: 1;
+    margin-top: 0rem; } }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href =  
+    "assets/images/green-building.png" 
+            type = "image/x-icon"> 
+    <title>Dendrophile Inc</title>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="node_modules/fullpage.js/dist/fullpage.min.css">
+    <link rel="stylesheet" href="css/home/home.css">
+</head>
+<style>
+ 
+</style>
+<body>
+    <nav id="nav" data-aos="fade-down" >
+        <a href="index.html"> <img src="assets/images/green-building.png" alt="logo"> </a>
+        <ul>
+         <li><a href="">Home</a></li>
+         <li> <a href="#s2"> Mountains</a></li>
+         <li><a href="#s3"> Rivers and Lakes</a></li>
+         <li><a href="#s4"> Forests</a></li>
+         <li><a href="#s5"> Oceans</a> </li>
+         <li><a href="#s6"> Contact us</a> </li>
+        </ul>
+    </nav>
+    <div id="fullpage" class="container" >    
+        
+        <section class="section s1" id="s1"  >
+            <video data-keepplaying autoplay loop muted src="assets/videos/main.mp4"> </video>
+             <div class="s1-container" >
+             <h1   >Let's make <span class="primary-text"> The world a better place</span></h1>
+             <h3>Together Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci tempora <br> eligendi natus mollitia numquam est magnam repellat. Ipsa, molestias vel.</h3>
+             <a class="btn" href="#">Chech out new lives</a>
+            </div>
+        </section>
+        <section id="s2" class="section s2"  >
+            <div class="s2-container grid" >
+                <div class="s2-left"  >
+                       <div class="s2-left-img" data-aos="fade-right">
+                            <img  class="couple2" src="assets/images/coupless.jpg" alt="">
+                            <img class="couple1"  src="assets/images/mount.jpg" alt="">
+                        </div>
+                    
+                </div>
+                <div class="s2-right">
+                    <div class="s2-right-container" data-aos="fade-left">
+                       <h2>HAPPY CUSTOMERS</h2>
+                       <h1>The best decision of our lives</h1>
+                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!</p>
+                       <a href=""  class="btn" >Mountain Adventures</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section s3 s2" id='s3' >
+        <div class="s3-title"><h1>Rivers and Lakes</h1></div>
+            <div class="grid">
+                <div class="left">
+                    <div class="left-text">
+                       <h2>HAPPY CUSTOMERS</h2>
+                       <h1>The best decision of our lives</h1>
+                       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!</p>
+                       <ul>
+                           <li><h2>Resort  with pool</h2></li>
+                           <li><h2>high jump fro helicopter</h2></li>
+                           <li><h2>Droe shoot </h2></li>
+                           <li><h2>Boating and swimming</h2></li>
+                           
+                       </ul>
+                       <a href=""  class="btn" >Rivers and Lakes</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-txt" style="text-align: center;" ><h1>A Never before Experience</h1></div>
+                    <div class="vid-1">
+                        <video   src="assets/vid-1.mp4" data-autoplay autoplay loop muted></video>
+                    </div> 
+                    <div class="vid-2">
+                        <video  src="assets/videos/vid-2.mp4" data-autoplay autoplay loop muted></video>
+                    </div>  
+                    <div class="vid-3">
+                        <video  src="assets/videos/vid.mp4" data-autoplay autoplay loop muted></video>
+                    </div>                   
+                </div>
+            </div>
+        </section>
+        <section class="section s4" id="s4" ></section>
+        <section class="section s5" id="s5" ></section>
+        <section class="section s6" id="s6" ></section>
+       
+    </div>
+    <script src="node_modules/aos/dist/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
+    <!-- fullpage cdn -->
+    <script src="node_modules/fullpage.js/dist/fullpage.extensions.min.js" ></script>
+    <script>
+      new fullpage('#fullpage', {
+      autoScrolling:true,
+      scrollBar:true,
+
+      sectionsColor: ['yellow', 'white', 'white', '#ADD8E6','orange','gold'],
+      scrollHorizontally: true,
+      navigation:true,
+      navigationTooltips : ['Home','Mountains','Rivers and Lakes','Forests','Ocean','contact us']
+
+});
+
+AOS.init();
+
+//custom
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+//     document.getElementById("nav")
+//   } else {
+//     // document.getElementById("nav").style.background = "300px";
+//   }
+// }
+
+
+//playvideo on hover 
+
+
+
+
+    </script>
+
+
+</body>
+</html>

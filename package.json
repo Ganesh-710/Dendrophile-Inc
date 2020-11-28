@@ -1,0 +1,18 @@
+{
+  "name": "portfolio_project",
+  "version": "1.0.0",
+  "description": "CV",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/home/main.scss css/home/home.css",
+    "watch:sass": "node-sass -w sass/home/main.scss css/home/home.css",
+    "compile:bootstrap": "node-sass exteral/bootstrap/scss/bootstrap.scss css/style.css"
+  },
+  "author": "ganesh",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "rellax": "^1.12.1"
+  }
+}

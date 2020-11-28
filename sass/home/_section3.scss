@@ -1,0 +1,183 @@
+#s3{ 
+    
+    & .s3-title{
+        
+         position: relative;
+         text-align: center;
+         & h1{
+             display: inline-block;
+             position: relative;
+             z-index: 100 ;
+         }
+         
+         & h1::after{
+            display: block;
+            content: "";
+            clear: both;
+            position: absolute;
+            top: 0;
+            left: -1.5rem;
+            background: var(--color-primary);
+            color: --color-dark;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            padding: 0.3rem 1.5rem;
+            transform: skew(-15deg);
+            transform: ;
+        }
+         
+    }
+
+    .fp-tableCell{
+
+      background: white !important;
+         
+    }
+
+    position: relative;
+    .cover{
+        position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           z-index: 1;
+    }
+     
+    z-index: 2;
+       .left-text{
+           padding-left: 4rem;
+           font-size: 1.2rem;
+
+           ul li ,ul {
+               
+               padding-inline-start: 0px;
+               padding-left: 2rem;
+               margin-top: 1rem;
+
+           }
+       }
+
+    .grid{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr) ;
+    }
+
+    .grid .right{
+        display: grid;
+        grid-template-columns: repeat(12,1fr) ;
+        grid-template-rows: repeat(12,1fr) ;
+        padding-right: 4rem;
+        position: relative;
+
+        &-txt  {
+            position: absolute;
+            right: 0;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .grid .right .vid-1{
+        grid-row: 1/13;
+        grid-column: 3/11;
+        overflow: hidden;
+        position: relative;
+        transition: all .6s ;
+
+       
+        & video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+           
+        }
+
+    
+
+    }
+
+    .grid .right .vid-2{
+        grid-row: 6/13;
+        grid-column: 1/6;  
+        position: relative;
+        transition: all .6s ;
+       
+        & video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            
+        }
+
+        &::after{
+                
+            display: block;
+            content: "";
+            clear: both;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-shadow: 1px 2px 33px 3px black;
+            /* background: red; */
+            background: transparent !important;
+            width: 100%;
+            height: .01px;
+        }
+
+    }
+
+
+ .grid .right .vid-3{
+        grid-row: 6/13;
+        grid-column: 8/13;
+        transition: all .6s ;
+        position: relative;
+
+        & video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        
+        }
+
+        &::after{
+                
+            display: block;
+            content: "";
+            clear: both;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-shadow: 1px 2px 33px 3px black;
+            /* background: red; */
+            background: transparent !important;
+            width: 100%;
+            height: .01px;
+        }
+
+    }
+
+    .vid-1:hover,.vid-2:hover,.vid-3:hover{
+      
+       transform: scale(1.2);
+       border-radius: 3px;
+
+            z-index: 10000 !important;
+       
+
+        }
+
+}
+
+
